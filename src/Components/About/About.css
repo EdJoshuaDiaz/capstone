@@ -1,0 +1,20 @@
+#about .container-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.title-row {
+  background-color: var(--secondary);
+  padding: 40px;
+}
+
+@media only screen and (max-width: 768px) {
+  #about .container-column {
+    display: block;
+  }
+  #about .container-column div {
+    padding-bottom: 15px;
+  }
+}

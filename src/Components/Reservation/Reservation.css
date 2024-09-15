@@ -1,0 +1,114 @@
+#reservation {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../../images/restaurant.jpg");
+}
+
+.form-cont {
+  background-color: var(--lightColor);
+  border-radius: 5px;
+  padding: 30px 20px;
+  width: 70%;
+  margin: auto;
+  animation: reserveAnimate 1.5s ease-in-out;
+}
+
+.form-cont h3,
+.form-cont .desc {
+  text-align: center;
+}
+.form-cont .desc {
+  margin-bottom: 30px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  border: 1px solid var(--primary);
+  background-color: var(--lightBG);
+  padding: 0 8px;
+  border-radius: 50px;
+  padding: 5px 20px;
+}
+
+form label {
+  padding-left: 15px;
+}
+
+form div {
+  margin-bottom: 5px;
+}
+
+form .btn {
+  width: 100%;
+}
+
+#message-cont {
+  margin: 20px 0px;
+  display: grid;
+}
+
+.form-col-2,
+.form-col-3 {
+  display: grid;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+.form-col-2 {
+  grid-template-columns: auto auto;
+}
+.form-col-3 {
+  grid-template-columns: auto auto auto;
+}
+
+.invalid-input {
+  border-bottom: 1px solid #d80101;
+}
+.error-msg {
+  color: #d80101;
+  font-weight: bold;
+  font-size: 12px;
+  padding-left: 15px;
+}
+
+button:disabled,
+button[disabled],
+button:disabled:hover {
+  background-color: #bbbbbb !important;
+  color: #3a3a3a !important;
+  border: #a3a3a3 !important;
+  cursor: not-allowed !important;
+}
+
+div:where(.swal2-container) button:where(.swal2-styled):where(.swal2-confirm) {
+  background-color: var(--primary) !important;
+  color: var(--lightColor) !important;
+  border: 2px solid var(--primary) !important;
+  box-shadow: none !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .form-col-2,
+  .form-col-3 {
+    display: block;
+  }
+
+  .form-cont {
+    width: 100%;
+    padding-bottom: 30px !important;
+  }
+
+  form div {
+    margin-bottom: 10px;
+  }
+}
+
+@keyframes reserveAnimate {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

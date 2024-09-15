@@ -1,0 +1,89 @@
+#menu {
+  padding-top: 0;
+}
+
+#menu h2 {
+  text-align: center;
+}
+
+#menu h4 {
+  color: var(--primary);
+}
+
+.menu-list {
+  padding-top: 0px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-list .container-column {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.menu-price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--primary);
+}
+
+.menu-details a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 15px;
+}
+
+.order-now {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: 0.5s ease-in-out;
+}
+
+.order-now:hover {
+  transform: translatex(15px);
+  transition: 0.5s ease-in-out;
+}
+
+.menu-list img {
+  border: none;
+}
+
+.menu-list figure {
+  background-color: var(--lightBG);
+  box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.2);
+}
+
+.menu-list figcaption {
+  padding: 10px 15px;
+}
+
+div:where(.swal2-container) button:where(.swal2-styled):where(.swal2-confirm),
+div:where(.swal2-container) button:where(.swal2-styled):where(.swal2-cancel) {
+  font-weight: bold !important;
+}
+
+div:where(.swal2-container) button:where(.swal2-styled):where(.swal2-cancel) {
+  color: var(--darkColor) !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .menu-list .container-column {
+    display: block;
+  }
+  .menu-list figure:nth-child(2) {
+    margin: 20px 0px;
+  }
+}

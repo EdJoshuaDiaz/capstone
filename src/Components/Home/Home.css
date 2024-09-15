@@ -1,0 +1,172 @@
+#cr1 {
+  padding-bottom: 0px;
+}
+
+#cr1 h2 {
+  text-align: center;
+}
+
+#cr2 {
+  padding-top: 30px;
+}
+
+#cr2 .container-column,
+#cr4 .container-column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+#cr2 h4 {
+  text-align: center;
+  color: var(--lightColor);
+  letter-spacing: 3px;
+}
+
+#cr2 a {
+  width: 100%;
+  height: 250px;
+}
+
+#cr2 a .col-bg {
+  background-size: cover !important;
+  background-position: 50% 50%;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.breakfast {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../../images/greekSalad.jpg");
+  transition: all 0.5s;
+}
+
+.lunch {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../../images/burger-fries.jpg");
+  transition: all 0.5s;
+}
+
+.dinner {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../../images/steak.jpg");
+  transition: all 0.5s;
+}
+
+a .col-bg:hover {
+  transform: translateY(-15px);
+  transition: 0.5s ease-in-out;
+}
+
+#cr3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
+    url("../../images/food-bg.jpg");
+}
+
+#cr3 {
+  padding: 0;
+  flex-direction: column;
+  align-items: center;
+}
+
+#cr3 .container-column div {
+  text-align: center;
+}
+
+#cr3 h2,
+#cr3 p {
+  color: var(--lightColor);
+}
+
+.row-space {
+  padding: 60px 40px;
+}
+
+#cr4 {
+  flex-direction: column;
+  align-items: center;
+}
+
+#cr4 h2 {
+  color: var(--primary);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#cr4 p {
+  color: var(--darkColor);
+}
+
+#cr4 .reviews {
+  border: 2px solid var(--primary);
+  padding: 15px;
+}
+
+#cr4 h5,
+#cr4 p {
+  color: var(--darkColor);
+}
+
+#cr4 figure img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: none;
+}
+#cr4 figure {
+  width: 20%;
+}
+.reviewer {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.star {
+  font-size: 18px;
+  letter-spacing: 5px;
+  line-height: normal;
+  color: var(--primary);
+}
+
+@media only screen and (max-width: 768px) {
+  #cr2 {
+    padding-top: 15px;
+  }
+
+  #cr2 .container-column,
+  #cr4 .container-column {
+    display: block;
+  }
+
+  #cr2 a {
+    display: block;
+    height: 250px;
+    margin: 10px 0px;
+  }
+
+  a .col-bg:hover {
+    transform: none;
+  }
+
+  .row-space {
+    padding: 30px 15px;
+  }
+
+  .bg-attr {
+    background-attachment: scroll !important;
+  }
+
+  #cr4 .reviews {
+    margin: 10px 0px;
+  }
+
+  #cr4 h2 {
+    margin-bottom: 15px;
+  }
+}
